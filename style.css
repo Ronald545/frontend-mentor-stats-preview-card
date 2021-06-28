@@ -1,0 +1,93 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* default */ 
+
+footer {
+    color: white;
+    font-family: "inter";
+    margin: 15px auto;
+    text-align: center;
+}
+
+/* column and row system  */
+.columns {
+    display: flex; 
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.column {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .columns {
+        display: block;
+    }
+}
+
+/* responsive image */
+.img-holder {
+    width: 100%;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+}
+
+.img-holder::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(170, 92, 219, 0.7);
+}
+
+@media only screen and (min-width: 750px){
+    .img {
+        width: 100%;
+    }
+}
+
+/* aesthetics */
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card { 
+    background-color: hsl(244, 38%, 16%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.title {
+    font-family: "lexend deca";
+}
+
+.desc {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "inter";
+}
+
+.subheader {
+    font-family: "inter";
+    font-weight: 700;
+}
+
+.subdesc {
+    font-family: "inter";
+    weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
